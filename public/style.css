@@ -44,16 +44,46 @@ label {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 1rem
+  margin: 1rem;
+  font-family: 'Mooli', sans-serif;
+}
+
+#type {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#type option {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+#type:focus {
+  outline: none;
+  border-color: #007BFF;
 }
 
 #quality {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Mooli', sans-serif;
+  margin: 0 auto;
+}
+
+.qualitytag{
+  margin: 1rem auto;
 }
 
 #download-btn {
@@ -65,6 +95,7 @@ label {
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Mooli', sans-serif;
+  margin: 2rem auto 0 auto;
 }
 
 #download-btn:hover {
