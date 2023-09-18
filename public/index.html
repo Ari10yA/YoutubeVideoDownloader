@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lobster&family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>YouTube Video Downloader</h1>
+    <div class="download-form">
+        <label for="url">Enter YouTube URL:</label>
+        <input type="text" id="url" placeholder="https://www.youtube.com/watch?v=...">
+        <button id="download-btn">Download</button>
+    </div>
+    <div class="quality-options">
+        <label for="quality">Select Format:</label>
+        <select id="quality">
+            <option value="highest">Video - Highest Quality</option>
+            <option value="lowest">Video - Lowest Quality</option>
+            <option value="720p">Video - 720p</option>
+            <option value="360p">Video - 360p</option>
+            <option value="audio">Audio (MP3)</option>
+        </select>
+    </div>
+
+    <div id="download-link" style="display:none;">
+        <p>Click the link below to download:</p>
+        <a id="download-link-a" href="#" download>Download Link</a>
+    </div>
+    <p id="error-message" style="color: red;"></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
